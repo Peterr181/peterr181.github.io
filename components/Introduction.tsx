@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import peterPhoto from "../assets/meprog.jpg";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
@@ -59,30 +60,32 @@ const Introduction = () => {
         </span>
       </motion.h1>
       <div className="flex justify-center gap-12">
-        <motion.button
-          className="p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3"
-          animate={{ scale: 1.1 }}
-          whileHover={{ scale: 1.2 }}
-        >
-          Get to know me more{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-arrow-narrow-right"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <Link href="/about">
+          <motion.button
+            className="p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3"
+            animate={{ scale: 1.1 }}
+            whileHover={{ scale: 1.2 }}
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M5 12l14 0" />
-            <path d="M15 16l4 -4" />
-            <path d="M15 8l4 4" />
-          </svg>
-        </motion.button>
+            Get to know me more{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-arrow-narrow-right"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </motion.button>
+        </Link>
         <a href="/PeterCV.pdf" download="PeterCV.pdf">
           <motion.button
             className="p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3"
