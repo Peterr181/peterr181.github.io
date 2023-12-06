@@ -194,3 +194,59 @@ body {
 .animated-button {
   animation: slideInFromBottom 1.5s ease-out; /* Adjust the duration and easing as needed */
 }
+.positionNavigation {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-width: 0.35rem;
+  border-top-width: 0.35rem;
+  border-bottom-width: 0.35rem;
+  border-color: #1d4ed8;
+  padding: 1.25rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 1363px) {
+  .positionNavigation {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+
+    border-right-width: 0.35rem;
+    border-top-width: 0.35rem;
+    border-bottom-width: 0.35rem;
+    border-left-width: 0.35rem;
+    border-color: #1d4ed8;
+    padding: 1.25rem;
+    margin-top: 10rem;
+    display: none;
+  }
+
+  .socialIcons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .mainButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigationMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .navigationMobileBox {
+    height: 100%;
+  }
+}

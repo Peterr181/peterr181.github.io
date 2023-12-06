@@ -35,7 +35,7 @@ const Introduction = () => {
           <span className="text-[#1d4ed8]">scalable code.</span>
         </span>
       </h1>
-      <div className="flex justify-center gap-12">
+      <div className="flex justify-center gap-12 mainButtons">
         <Link href="/about">
           <button className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3">
             Get to know me more{" "}

@@ -21,8 +21,8 @@ export default function RootLayout({
       <body
         className={`${inter.className}  text-gray-950 h-screen text-white relative `}
       >
-        <div className="fixed  top-1/2 transform -translate-y-1/2  border-r-[0.35rem] border-t-[0.35rem] border-b-[0.35rem] border-[#1d4ed8] p-5 slideInFromLeftAnimate">
-          <div className="flex flex-col gap-12">
+        <div className="positionNavigation slideInFromLeftAnimate ">
+          <div className="socialIcons">
             <SocialIcon url="https://github.com/Peterr181" />
             <SocialIcon url="https://www.youtube.com/channel/UCRF__zCXhBQw35VlDzvIcfw" />
             <SocialIcon url="https://www.linkedin.com/in/peter-%C5%BCerdzi%C5%84ski/" />
