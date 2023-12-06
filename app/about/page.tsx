@@ -13,7 +13,7 @@ const Page = () => {
           <div className="flex justify-center gap-10 ">
             <div className="w-6/12">
               <h1 className="animated-text mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] md:text-2xl xl:text-2xl">
-                <span className="font-bold">Hello, I'm Peter.</span> I'm an
+                <span className="font-bold">Hello, Im Peter.</span> Im an
                 aspiring{" "}
                 <span className="font-bold text-[#1d4ed8]">
                   front-end developer
