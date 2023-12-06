@@ -67,14 +67,11 @@ const Page = () => {
         <h2 className="font-bold text-xl text-center  ">Career history</h2>
         <div className="bg-[#121212] p-3 rounded-xl mt-3">
           <p className="text-[#1d4ed8] text-xl text-center font-bold">
-            {" "}
             Prosta Edukacja
-          </p>{" "}
-          <p className="text-sm text-center">
-            Front-end developer, intern
-          </p>{" "}
-          <p className="text-sm text-center">React, Next.js, SCSS, Redux</p>{" "}
-          <p className="text-sm text-center">4 months</p>{" "}
+          </p>
+          <p className="text-sm text-center">Front-end developer, intern</p>
+          <p className="text-sm text-center">React, Next.js, SCSS, Redux</p>
+          <p className="text-sm text-center">4 months</p>
         </div>
       </Modal>
     </>
