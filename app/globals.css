@@ -143,3 +143,54 @@ body {
 .slideInFromLeftAnimate {
   animation: slideInFromLeft 3s ease-in-out;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: black;
+  padding: 20px;
+
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.open {
+  display: block;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150px); /* Adjust the initial Y position as needed */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-button {
+  animation: slideInFromBottom 1.5s ease-out; /* Adjust the duration and easing as needed */
+}

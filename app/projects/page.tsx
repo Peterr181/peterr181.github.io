@@ -33,6 +33,14 @@ const Page = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-9">
+          <a
+            href="https://github.com/Peterr181"
+            className="download-cv-button p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3"
+          >
+            Check more here!
+          </a>
+        </div>
       </div>
     </section>
   );
