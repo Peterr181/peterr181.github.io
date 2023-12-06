@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     name: "Home",
-    hash: "/",
+    hash: "/introduction",
   },
   {
     name: "About",

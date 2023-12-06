@@ -10,8 +10,8 @@ const Page = () => {
     <>
       <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
         <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
-          <div className="flex justify-center gap-10 ">
-            <div className="w-6/12">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
+            <div className="w-full sm:w-6/12">
               <h1 className="animated-text mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] md:text-2xl xl:text-2xl">
                 <span className="font-bold">Hello, Im Peter.</span> Im an
                 aspiring{" "}
@@ -45,7 +45,7 @@ const Page = () => {
               </h1>
               <div className="flex justify-center">
                 <button
-                  className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button"
+                  className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button "
                   onClick={() => setShowModal(true)}
                 >
                   See employment history
@@ -65,10 +65,13 @@ const Page = () => {
       </section>
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
         <h2 className="font-bold text-xl text-center  ">Career history</h2>
-        <div className="bg-[#121212] p-3 rounded-xl mt-3">
-          <p className="text-[#1d4ed8] text-xl text-center font-bold">
+        <div className="bg-[#121212] p-3 rounded-xl mt-3 flex flex-col">
+          <a
+            href="https://prostaedukacja.com.pl/"
+            className="text-[#1d4ed8] text-xl text-center font-bold"
+          >
             Prosta Edukacja
-          </p>
+          </a>
           <p className="text-sm text-center">Front-end developer, intern</p>
           <p className="text-sm text-center">React, Next.js, SCSS, Redux</p>
           <p className="text-sm text-center">4 months</p>
