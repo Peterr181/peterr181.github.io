@@ -14,7 +14,7 @@ const Header = () => {
       >
         <ul className="flex gap-6 items-center justify-center navigationMobile">
           {navLinks.map((link, index) => (
-            <li key={index}>
+            <li key={index} className="font-bold">
               <Link
                 href={link.hash}
                 className="hover:text-[#1d4ed8] transition-colors duration-200"
