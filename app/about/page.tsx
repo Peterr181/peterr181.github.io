@@ -4,7 +4,7 @@ import Image from "next/image";
 import myImage from "../../assets/myface.jpg";
 import "../../app/globals.css";
 import Modal from "@/components/Modal";
-const page = () => {
+const Page = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
@@ -81,4 +81,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

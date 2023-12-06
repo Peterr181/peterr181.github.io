@@ -1,7 +1,7 @@
 import React from "react";
 import "../../app/globals.css";
 
-const page = () => {
+const Page = () => {
   return (
     <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
       <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
@@ -91,4 +91,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

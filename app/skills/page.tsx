@@ -10,7 +10,7 @@ interface LearningHistoryItem {
   timeDifference?: string;
 }
 
-const page = () => {
+const Page = () => {
   const [showModal, setShowModal] = useState(false);
 
   const [learningHistory, setLearningHistory] = useState<LearningHistoryItem[]>(
@@ -219,4 +219,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
