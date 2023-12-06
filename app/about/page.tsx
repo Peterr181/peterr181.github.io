@@ -1,19 +1,14 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import myImage from "../../assets/myface.jpg";
-import { motion } from "framer-motion";
+import "../../app/globals.css";
 const page = () => {
   return (
     <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
       <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
         <div className="flex justify-center gap-10 ">
           <div className="w-6/12">
-            <motion.h1
-              className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl"
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
+            <h1 className="animated-text mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl">
               <span className="font-bold">Hello, I'm Peter.</span> I'm an
               aspiring{" "}
               <span className="font-bold text-[#1d4ed8]">
@@ -43,7 +38,7 @@ const page = () => {
                 as I navigate this dynamic field and create a future where
                 technology and creativity converge seamlessly.
               </span>
-            </motion.h1>
+            </h1>
           </div>
           <div>
             <Image

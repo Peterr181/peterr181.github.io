@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className}  text-gray-950 h-screen overflow-y-hidden text-white relative `}
+        className={`${inter.className}  text-gray-950 h-screen text-white relative `}
       >
-        <div className="absolute top-1/2 transform -translate-y-1/2  border-r-[0.35rem] border-t-[0.35rem] border-b-[0.35rem] border-[#1d4ed8] p-5 ">
+        <div className="fixed  top-1/2 transform -translate-y-1/2  border-r-[0.35rem] border-t-[0.35rem] border-b-[0.35rem] border-[#1d4ed8] p-5 slideInFromLeftAnimate">
           <div className="flex flex-col gap-12">
             <SocialIcon url="https://github.com/Peterr181" />
             <SocialIcon url="https://www.youtube.com/channel/UCRF__zCXhBQw35VlDzvIcfw" />
