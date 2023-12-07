@@ -9,6 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Piotr Żerdziński",
   description: "Personalne portfolio Piotr Żerdziński",
+  verification: {
+    google: "4to734AqMBzIMfrTUNyGG6pov2aIPDC_oVnkqZ023uU",
+    yandex: "",
+    me: "",
+  },
 };
 
 export default function RootLayout({
