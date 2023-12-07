@@ -35,7 +35,7 @@ const Header = () => {
         </ul>
       </motion.div>
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-opacity-75 mt-12 gap-3 items-center justify-center text-lg p-9 border-[0.35rem] border-[#1d4ed8] hidden xmd:hidden "
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-opacity-75 mt-12 gap-3 items-center justify-center text-lg p-9 border-[0.35rem] border-[rgb(29,78,216)] hidden xmd:hidden "
         initial={{ y: -300, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       >

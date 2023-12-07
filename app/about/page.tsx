@@ -52,7 +52,7 @@ const Page = () => {
                 </button>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center shadow-lg">
               <Image
                 src={myImage}
                 alt="Peter face image"
@@ -62,7 +62,7 @@ const Page = () => {
             </div>
             <div className="lg:hidden flex justify-center">
               <button
-                className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm sm:mt-10 "
+                className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm sm:mt-10  shadow-lg"
                 onClick={() => setShowModal(true)}
               >
                 See employment history
@@ -84,27 +84,27 @@ const Page = () => {
           </p>
           <div className="flex flex-col  lg:flex-row gap-3 mt-3 mb-3 justify-center items-center">
             <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+              <p className="relative  inline-flex items-center text-sm text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
                 React
               </p>
             </div>
             <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+              <p className="relative  inline-flex items-center text-sm text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
                 Next.js
               </p>
             </div>
             <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
                 SCSS
               </p>
             </div>
             <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
                 Figma
               </p>
             </div>
             <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
                 SCRUM
               </p>
             </div>

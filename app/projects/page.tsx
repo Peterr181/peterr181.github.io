@@ -11,7 +11,7 @@ const Page = () => {
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-[#1E1E1F] w-full h-full animated-text "
+              className="flex flex-col items-center bg-[#1E1E1F] w-full h-full animated-text shadow-lg rounded-xl "
             >
               <img
                 src={project.image}
@@ -26,7 +26,7 @@ const Page = () => {
                       className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white "
                       key={techIndex}
                     >
-                      <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                      <p className="relative  inline-flex items-center text-sm font-bold text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] ">
                         {tech}
                       </p>
                     </div>
