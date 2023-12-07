@@ -34,7 +34,7 @@ const Page = () => {
             I&apos;m developer with 4 months of experience working as a{" "}
             <span className="font-bold text-[#1d4ed8]">React </span>
             developer. My main focus is to create beautiful websites with{" "}
-            <span className="text-[#1d4ed8]">scalable code.</span>
+            <span className="text-[#1d4ed8] underline">scalable code.</span>
           </span>
         </h1>
         <div className="flex justify-center gap-12 mainButtons">

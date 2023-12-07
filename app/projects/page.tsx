@@ -1,6 +1,7 @@
 import React from "react";
 import { projectsData } from "@/constants/data";
 import Image from "next/image";
+import "../../app/globals.css";
 
 const Page = () => {
   return (
@@ -10,23 +11,25 @@ const Page = () => {
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-[#1E1E1F] w-full h-full "
+              className="flex flex-col items-center bg-[#1E1E1F] w-full h-full animated-text "
             >
               <img
                 src={project.image}
                 alt={`Project Image for ${project.name}`}
                 className="lg:w-full object-cover lg:h-96 max-w-full "
               />
-              <div className="p-6 flex flex-col justify-center items-center gap-3 text-xs">
+              <div className="p-6 flex flex-col justify-center items-center gap-3 text-xl md:text-xl">
                 <p>{project.description}</p>
                 <div className="lg:flex grid grid-cols-2  items-center gap-6">
                   {project.stack.map((tech, techIndex) => (
-                    <p
-                      key={techIndex}
-                      className="border-[0.20rem] border-[#1d4ed8] font-bold p-2 rounded-md text-[10px]"
-                    >
-                      {tech}
-                    </p>
+                    <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+                      <p
+                        key={techIndex}
+                        className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]"
+                      >
+                        {tech}
+                      </p>
+                    </div>
                   ))}
                 </div>
               </div>

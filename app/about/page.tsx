@@ -72,17 +72,46 @@ const Page = () => {
         </div>
       </section>
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <h2 className="font-bold text-xl text-center  ">Career history</h2>
-        <div className="bg-[#121212] p-3 rounded-xl mt-3 flex flex-col">
+        <div className=" p-6 rounded-xl mt-3 flex flex-col">
           <a
             href="https://prostaedukacja.com.pl/"
-            className="text-[#1d4ed8] text-xl text-center font-bold"
+            className="text-[#1d4ed8] text-xl lg:text-4xl mb-3 text-center font-bold"
           >
             Prosta Edukacja
           </a>
-          <p className="text-sm text-center">Front-end developer, intern</p>
-          <p className="text-sm text-center">React, Next.js, SCSS, Redux</p>
-          <p className="text-sm text-center">4 months</p>
+          <p className="text-md text-gray-300 text-center">
+            Front-end developer, intern
+          </p>
+          <div className="flex flex-col  lg:flex-row gap-3 mt-3 mb-3 justify-center items-center">
+            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                React
+              </p>
+            </div>
+            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                Next.js
+              </p>
+            </div>
+            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                SCSS
+              </p>
+            </div>
+            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                Figma
+              </p>
+            </div>
+            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
+              <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
+                SCRUM
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-center">
+            <p>MAY — AUG 2023</p>
+          </p>
         </div>
       </Modal>
     </>

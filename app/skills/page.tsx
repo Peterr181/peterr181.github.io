@@ -70,119 +70,119 @@ const Page = () => {
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105 "
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
-                    className="fade-in-text"
+                    className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="mt-9">
