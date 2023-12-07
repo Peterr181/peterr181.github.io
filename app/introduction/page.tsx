@@ -26,7 +26,7 @@ const Page = () => {
           </div>
         </div>
 
-        <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl">
+        <h1 className="mb-10 mt-4 px-4 lg:text-2xl text-xs font-medium !leading-[1.5] sm:text-2xl">
           <span className="font-bold">Hello, I&apos;m Peter.</span> I&apos;m
           aspiring{" "}
           <span className="font-bold text-[#1d4ed8]">front-end developer</span>.{" "}
@@ -39,8 +39,8 @@ const Page = () => {
         </h1>
         <div className="flex justify-center gap-12 mainButtons">
           <Link href="/about">
-            <button className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3">
-              Get to know me more{" "}
+            <button className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3  lg:text-base text-xs">
+              Know me more{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-arrow-narrow-right"
@@ -61,7 +61,7 @@ const Page = () => {
             </button>
           </Link>
           <a href="/PeterCV.pdf" download="PeterCV.pdf">
-            <button className="download-cv-button p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3">
+            <button className="download-cv-button p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3 lg:text-base text-xs">
               Download CV
               <svg
                 xmlns="http://www.w3.org/2000/svg"

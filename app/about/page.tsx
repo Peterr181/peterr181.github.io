@@ -11,8 +11,8 @@ const Page = () => {
       <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
         <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
-            <div className="w-full sm:w-6/12">
-              <h1 className="animated-text mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] md:text-2xl xl:text-2xl">
+            <div className="w-full lg:w-6/12">
+              <h1 className="animated-text mb-10 mt-4  text-xs lg:text-2xl  !leading-[1.5] md:text-2xl xl:text-2xl">
                 <span className="font-bold">Hello, Im Peter.</span> Im an
                 aspiring{" "}
                 <span className="font-bold text-[#1d4ed8]">
@@ -43,22 +43,30 @@ const Page = () => {
                   technology and creativity converge seamlessly.
                 </span>
               </h1>
-              <div className="flex justify-center">
+              <div className="lg:flex lg:justify-center hidden">
                 <button
-                  className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button "
+                  className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm"
                   onClick={() => setShowModal(true)}
                 >
                   See employment history
                 </button>
               </div>
             </div>
-            <div>
+            <div className="flex justify-center">
               <Image
                 src={myImage}
                 alt="Peter face image"
                 width={300}
                 className="rounded"
               />
+            </div>
+            <div className="lg:hidden flex justify-center">
+              <button
+                className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm sm:mt-10 "
+                onClick={() => setShowModal(true)}
+              >
+                See employment history
+              </button>
             </div>
           </div>
         </div>

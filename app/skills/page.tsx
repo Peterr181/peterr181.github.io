@@ -58,13 +58,13 @@ const Page = () => {
       <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
         <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
           <div>
-            <h2 className=" text-4xl mb-10">
+            <h2 className=" lg:text-4xl text-md mb-10">
               Technologies <span className="text-[#1d4ed8]">I know</span> very
               well and <span className="text-[#1d4ed8]">still learning</span>
             </h2>
             <div>
               <div className="flex justify-center flex-col items-center">
-                <div className="grid grid-cols-6 gap-10 justify-center items-center">
+                <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 gap-10 justify-center items-center grid-cols-2">
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     width={100}
@@ -187,7 +187,7 @@ const Page = () => {
                 </div>
                 <div className="mt-9">
                   <button
-                    className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3"
+                    className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 lg:text-base text-xs "
                     onClick={() => setShowModal(true)}
                   >
                     Check my main technologies
@@ -206,11 +206,11 @@ const Page = () => {
           {learningHistory.map((item) => (
             <div key={item.subject} className="bg-[#121212] p-3 rounded-xl">
               {" "}
-              <p className="text-[#1d4ed8] text-xl text-center font-bold">
+              <p className="text-[#1d4ed8] text-sm text-center font-bold">
                 {" "}
                 {item.subject}{" "}
               </p>{" "}
-              <p className="text-sm text-center">{item.timeDifference}</p>{" "}
+              <p className="text-xs text-center">{item.timeDifference}</p>{" "}
             </div>
           ))}{" "}
         </div>

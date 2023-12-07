@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
       <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
-        <div className="grid grid-cols-2 gap-5 ">
+        <div className="grid xl:grid-cols-2 md:grid-cols-1 gap-5 ">
           {projectsData.map((project, index) => (
             <div
               key={index}
@@ -15,15 +15,15 @@ const Page = () => {
               <img
                 src={project.image}
                 alt={`Project Image for ${project.name}`}
-                className="w-full object-cover h-96 "
+                className="lg:w-full object-cover lg:h-96 max-w-full "
               />
-              <div className="p-6 flex flex-col justify-center items-center gap-3">
+              <div className="p-6 flex flex-col justify-center items-center gap-3 text-xs">
                 <p>{project.description}</p>
-                <div className="flex space-x-4">
+                <div className="lg:flex grid grid-cols-2  items-center gap-6">
                   {project.stack.map((tech, techIndex) => (
                     <p
                       key={techIndex}
-                      className="border-[0.20rem] border-[#1d4ed8] font-bold p-3 rounded-md"
+                      className="border-[0.20rem] border-[#1d4ed8] font-bold p-2 rounded-md text-[10px]"
                     >
                       {tech}
                     </p>

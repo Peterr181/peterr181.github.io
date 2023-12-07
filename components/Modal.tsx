@@ -17,7 +17,7 @@ const Modal: FC<ModalProps> = ({ isVisible, onClose, children }) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-25 backdrop-blur-xl flex justify-center items-center transition-opacity ${
+      className={`fixed inset-0 bg-black bg-opacity-25 backdrop-blur-xl flex justify-center items-center transition-opacity p-6 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={() => onClose()}

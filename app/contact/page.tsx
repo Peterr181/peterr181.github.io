@@ -5,12 +5,12 @@ const Page = () => {
   return (
     <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
       <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
-        <h2 className="text-4xl mt-16 fade-in-text">
+        <h2 className="lg:text-4xl md:text-2xl sm: text-xl mt-16 fade-in-text">
           Choose <span className="text-[#1d4ed8]">your</span> way to{" "}
           <span className="text-[#1d4ed8]">contact me</span>
         </h2>
         <div className="mt-10">
-          <div className="flex gap-6 mt-3 items-center">
+          <div className="lg:flex grid lg:gap-6 gap-6  mt-3 items-center">
             <a
               href="#"
               className="text-center border border-[#1d4ed8] text-lg font-bold no-underline flex justify-center gap-4 items-center text-font-primary w-full h-full transition-transform duration-100 ease-in-out rounded-full px-8 py-4 spinning-animation fade-in-link discord-link"
