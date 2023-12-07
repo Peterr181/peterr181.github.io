@@ -60,7 +60,7 @@ const Page = () => {
               </svg>
             </button>
           </Link>
-          <a href="/PeterCV.pdf" download="PeterCV.pdf">
+          <a href="./PeterCV.pdf" download="PeterCV.pdf">
             <button className="download-cv-button p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3 lg:text-base text-xs">
               Download CV
               <svg
