@@ -22,11 +22,11 @@ const Page = () => {
                 <p>{project.description}</p>
                 <div className="lg:flex grid grid-cols-2  items-center gap-6">
                   {project.stack.map((tech, techIndex) => (
-                    <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-                      <p
-                        key={techIndex}
-                        className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]"
-                      >
+                    <div
+                      className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white "
+                      key={techIndex}
+                    >
+                      <p className="relative  inline-flex items-center text-sm font-medium text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8]">
                         {tech}
                       </p>
                     </div>
