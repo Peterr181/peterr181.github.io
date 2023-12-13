@@ -250,3 +250,71 @@ body {
     height: 100%;
   }
 }
+
+.myCustomClass {
+  background-color: #002244;
+  position: absolute;
+  top: -6rem;
+  z-index: -10;
+  right: 11rem;
+  height: 31.25rem;
+  width: 31.25rem;
+  border-radius: 50%;
+  filter: blur(10rem);
+}
+
+@media (min-width: 640px) {
+  .myCustomClass {
+    width: 68.75rem;
+  }
+}
+
+.dark .myCustomClass {
+  background-color: #002244;
+}
+
+.myCustomClass2 {
+  background-color: #002244;
+  position: absolute;
+  top: -1rem;
+  z-index: -10;
+  left: -35rem;
+  height: 31.25rem;
+  width: 50rem;
+  border-radius: 50%;
+  filter: blur(10rem);
+}
+
+@media (min-width: 640px) {
+  .myCustomClass2 {
+    width: 68.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .myCustomClass2 {
+    left: -33rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .myCustomClass2 {
+    left: -28rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .myCustomClass2 {
+    left: -15rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .myCustomClass2 {
+    left: -5rem;
+  }
+}
+
+.dark .myCustomClass2 {
+  background-color: #0c2340;
+}
