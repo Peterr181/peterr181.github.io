@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Personalne portfolio Piotr Żerdziński",
   verification: {
     google: "4to734AqMBzIMfrTUNyGG6pov2aIPDC_oVnkqZ023uU",
-    yandex: "",
+    yandex: "a09847562c582114",
     me: "",
   },
 };
