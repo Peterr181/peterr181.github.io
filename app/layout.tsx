@@ -7,7 +7,7 @@ import { SocialIcon } from "react-social-icons";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Piotr Żerdziński",
+  title: "Piotr Żerdziński Portfolio",
   description: "Personalne portfolio Piotr Żerdziński",
   verification: {
     google: "4to734AqMBzIMfrTUNyGG6pov2aIPDC_oVnkqZ023uU",
