@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://peterr181.github.io/nextjs-portfolio/sitemap.xml
