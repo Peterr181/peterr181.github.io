@@ -164,7 +164,14 @@ const Page = () => {
                     className="fade-in-text group transform transition-transform hover:scale-105"
                   />
                   <Image
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                    width={100}
+                    alt="programming language icon"
+                    height={100}
+                    className="fade-in-text group transform transition-transform hover:scale-105"
+                  />
+                  <Image
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
                     width={100}
                     alt="programming language icon"
                     height={100}
