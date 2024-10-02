@@ -1,11 +1,46 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import myImage from "../../assets/myface.jpg";
+import myImage from "../../assets/myface2.jpg";
 import "../../app/globals.css";
 import Modal from "@/components/Modal";
+
 const Page = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const [jobs] = useState([
+    {
+      company: "Consilium",
+      position: "Junior Next.js Developer",
+      skills: [
+        "Next.js",
+        "React",
+        "Tailwind",
+        "Git",
+        "Zustand",
+        "Jira",
+        "Styled components",
+        "react-admin",
+        "Figma",
+      ],
+      timeline: "May 2024 — Present",
+    },
+    {
+      company: "Comarch",
+      position: "Junior Java Developer",
+      skills: ["Java", "Spring", "Maven", "Git", "Postman", "Jira"],
+      timeline: "Jul 2024 — Aug 2024",
+      link: "https://comarch.com",
+    },
+    {
+      company: "Prosta Edukacja",
+      position: "Front-end Developer, Intern",
+      skills: ["React", "Next.js", "Tailwind", "SCSS", "Figma", "SCRUM"],
+      timeline: "Mar 2023 — Aug 2023",
+      link: "https://prostaedukacja.com.pl/",
+    },
+  ]);
+
   return (
     <>
       <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
@@ -20,10 +55,11 @@ const Page = () => {
                 </span>
                 .{" "}
                 <span>
-                  With 4 months of experience working as a{" "}
+                  With one year of experience working as a{" "}
                   <span className="font-bold text-[#1d4ed8]">React </span>
                   developer, I have embarked on an exciting journey to craft
-                  immersive user experiences.{" "}
+                  immersive user experiences. I have been working also as a Java
+                  Developer for three months.{" "}
                   <span className="font-bold text-[#1d4ed8]">
                     My passion
                   </span>{" "}
@@ -52,17 +88,17 @@ const Page = () => {
                 </button>
               </div>
             </div>
-            <div className="flex justify-center shadow-lg">
+            <div className="flex justify-center shadow-lg rounded-xl">
               <Image
                 src={myImage}
                 alt="Peter face image"
-                width={300}
+                width={380}
                 className="rounded"
               />
             </div>
             <div className="lg:hidden flex justify-center">
               <button
-                className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm sm:mt-10  shadow-lg"
+                className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm sm:mt-10 shadow-lg"
                 onClick={() => setShowModal(true)}
               >
                 See employment history
@@ -71,47 +107,42 @@ const Page = () => {
           </div>
         </div>
       </section>
+
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <div className=" p-6 rounded-xl mt-3 flex flex-col">
-          <a
-            href="https://prostaedukacja.com.pl/"
-            className="text-[#1d4ed8] text-xl lg:text-4xl mb-3 text-center font-bold"
-          >
-            Prosta Edukacja
-          </a>
-          <p className="text-md text-gray-300 text-center">
-            Front-end developer, intern
-          </p>
-          <div className="flex flex-col  lg:flex-row gap-3 mt-3 mb-3 justify-center items-center">
-            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
-                React
+        <div className="p-6 rounded-xl mt-3 flex flex-col text-center gap-4">
+          {jobs.map((job, index) => (
+            <div
+              key={index}
+              className={`mb-6 ${
+                index !== jobs.length - 1 ? "border-b border-gray-800 pb-6" : ""
+              }`}
+            >
+              <a
+                href={job.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#1d4ed8] text-xl lg:text-4xl mb-3 text-center font-bold "
+              >
+                {job.company}
+              </a>
+              <p className="text-md text-gray-300 text-center mt-3">
+                {job.position}
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 mt-3 mb-3">
+                {job.skills.map((skill, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white"
+                  >
+                    <p className="text-sm text-slate-300 font-bold">{skill}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-center text-gray-400">
+                {job.timeline}
               </p>
             </div>
-            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
-                Next.js
-              </p>
-            </div>
-            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
-                SCSS
-              </p>
-            </div>
-            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
-                Figma
-              </p>
-            </div>
-            <div className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white">
-              <p className="relative  inline-flex items-center text-sm  text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] font-bold">
-                SCRUM
-              </p>
-            </div>
-          </div>
-          <p className="text-sm text-center">
-            <p>MAY — AUG 2023</p>
-          </p>
+          ))}
         </div>
       </Modal>
     </>

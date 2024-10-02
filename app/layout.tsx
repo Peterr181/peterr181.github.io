@@ -31,7 +31,6 @@ export default function RootLayout({
         <div className="positionNavigation slideInFromLeftAnimate ">
           <div className="socialIcons">
             <SocialIcon url="https://github.com/Peterr181" />
-            <SocialIcon url="https://www.youtube.com/channel/UCRF__zCXhBQw35VlDzvIcfw" />
             <SocialIcon url="https://www.linkedin.com/in/peter-%C5%BCerdzi%C5%84ski/" />
             <SocialIcon url="https://leetcode.com/n4cho181/" />
           </div>
@@ -39,7 +38,6 @@ export default function RootLayout({
         <Header />
 
         {children}
-
       </body>
     </html>
   );

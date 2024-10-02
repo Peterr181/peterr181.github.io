@@ -29,11 +29,14 @@ const Page = () => {
         <h1 className="mb-10 mt-4 px-4 lg:text-2xl text-xs font-medium !leading-[1.5] sm:text-2xl">
           <span className="font-bold">Hello, I&apos;m Peter.</span> I&apos;m
           aspiring{" "}
-          <span className="font-bold text-[#1d4ed8]">front-end developer</span>.{" "}
+          <span className="font-bold text-[#1d4ed8]">front-end developer</span>.
+          I am also computer science student currently on the last semester.{" "}
           <span>
-            I&apos;m developer with 4 months of experience working as a{" "}
+            I&apos;m developer with one year of experience working as a{" "}
             <span className="font-bold text-[#1d4ed8]">React </span>
-            developer. My main focus is to create beautiful websites with{" "}
+            developer. I have also experienced working in big team as Java
+            Developer during summer internship in Comarch My main focus is to
+            create beautiful websites with{" "}
             <span className="text-[#1d4ed8] underline">scalable code.</span>
           </span>
         </h1>
@@ -60,7 +63,7 @@ const Page = () => {
               </svg>
             </button>
           </Link>
-          <a href="./PeterCV.pdf" download="PeterCV.pdf">
+          <a href="./PeterCVNew.pdf" download="PeterCVNew.pdf">
             <button className="download-cv-button p-3 bg-[#1E1E1F] text-white font-bold rounded flex justify-center align-center gap-3 lg:text-base text-xs">
               Download CV
               <svg
