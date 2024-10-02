@@ -5,24 +5,24 @@ import "../../app/globals.css";
 
 const Page = () => {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
-      <div className="mt-36  text-center sm:mb-0 scroll-mt-[100rem] ">
+    <section className="flex min-h-screen flex-col items-center justify-between p-6 sm:p-12 md:p-16 lg:p-24 text-white">
+      <div className="mt-16 lg:mt-36 text-center sm:mb-0 m-auto max-w-[1200px]">
         <h2 className="lg:text-4xl text-md mb-10">
           My personal<span className="text-[#1d4ed8]"> projects</span> I did by{" "}
           <span className="text-[#1d4ed8]">myself</span>
         </h2>
 
-        <div className="grid xl:grid-cols-1 md:grid-cols-1 gap-20 ">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-12">
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-transparent h-full animated-text shadow-lg rounded-2xl  border-[0.35rem] border-[#1d4ed8] w-[70rem] "
+              className="flex flex-col items-center bg-transparent h-full animated-text shadow-lg rounded-2xl border-[0.35rem] border-[#1d4ed8] w-full"
             >
-              <div className="w-full h-[31rem]">
+              <div className="w-full h-[300px]">
                 <img
                   src={project.image}
                   alt={`Project Image for ${project.name}`}
-                  className="w-full h-full "
+                  className="w-full h-full object-cover rounded-t-2xl"
                 />
               </div>
 
@@ -43,13 +43,13 @@ const Page = () => {
                   </a>
                 </div>
                 <p className="text-lg">{project.description}</p>
-                <div className="lg:flex grid grid-cols-2  items-center gap-6">
+                <div className="flex flex-wrap justify-center items-center gap-2">
                   {project.stack.map((tech, techIndex) => (
                     <div
-                      className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white "
+                      className="flex items-center rounded-full bg-[#1d4ed8] px-3 py-1 text-xs font-medium leading-5 text-white"
                       key={techIndex}
                     >
-                      <p className="relative  inline-flex items-center text-sm font-bold text-slate-300 hover:text-violet cursor-pointer focus-visible:text-[#1d4ed8] ">
+                      <p className="text-sm font-bold text-slate-300 hover:text-violet cursor-pointer">
                         {tech}
                       </p>
                     </div>
@@ -59,6 +59,7 @@ const Page = () => {
             </div>
           ))}
         </div>
+
         <div className="flex justify-center mt-9">
           <a
             href="https://github.com/Peterr181"
