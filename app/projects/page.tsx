@@ -8,8 +8,8 @@ const Page = () => {
     <section className="flex min-h-screen flex-col items-center justify-between p-6 sm:p-12 md:p-16 lg:p-24 text-white">
       <div className="mt-16 lg:mt-36 text-center sm:mb-0 m-auto max-w-[1200px]">
         <h2 className="lg:text-4xl text-md mb-10">
-          My personal<span className="text-[#1d4ed8]"> projects</span> I did by{" "}
-          <span className="text-[#1d4ed8]">myself</span>
+          My personal<span className="text-[#1d4ed8]"> projects</span> I did by
+          <span className="text-[#1d4ed8]"> myself</span>
         </h2>
 
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-12">
