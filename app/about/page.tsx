@@ -23,7 +23,7 @@ const Page = () => {
         "react-admin",
         "Figma",
       ],
-      timeline: "May 2024 — Present",
+      timeline: "Jan 2024 — Oct 2024",
     },
     {
       company: "Comarch",
@@ -43,11 +43,11 @@ const Page = () => {
 
   return (
     <>
-      <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
+      <section className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-9 text-white">
         <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
-            <div className="w-full lg:w-6/12">
-              <h1 className="animated-text mb-10 mt-4  text-xs lg:text-2xl  !leading-[1.5] md:text-2xl xl:text-2xl">
+            <div className="lg:w-6/12 w-full">
+              <h1 className="animated-text mb-10 mt-4  text-lg  lg:text-2xl  !leading-[1.5] md:text-2xl xl:text-2xl">
                 <span className="font-bold">Hello, Im Peter.</span> Im an
                 aspiring{" "}
                 <span className="font-bold text-[#1d4ed8]">
@@ -79,7 +79,7 @@ const Page = () => {
                   technology and creativity converge seamlessly.
                 </span>
               </h1>
-              <div className="lg:flex lg:justify-center hidden">
+              <div className="lg:flex lg:justify-center hidden ">
                 <button
                   className="get-to-know-button p-3 bg-[#1d4ed8] text-white font-bold rounded flex justify-center align-center gap-3 animated-button lg:text-base text-sm"
                   onClick={() => setShowModal(true)}
@@ -88,13 +88,17 @@ const Page = () => {
                 </button>
               </div>
             </div>
-            <div className="flex justify-center shadow-lg rounded-xl">
+            <div className="flex justify-center shadow-lg rounded-xl relative">
               <Image
                 src={myImage}
                 alt="Peter face image"
                 width={380}
-                className="rounded"
+                className="rounded-[21px]"
+                quality={100}
               />
+              <div className="absolute bottom-[-20px] left-0 right-0 h-6 bg-blue-500 opacity-50 blur-lg"></div>
+              <div className="absolute bottom-[-20px]  left-0 h-6 w-6 bg-blue-500 opacity-50 blur-lg"></div>
+              <div className="absolute bottom-[-20px]  right-0 h-6 w-6 bg-blue-500 opacity-50 blur-lg"></div>
             </div>
             <div className="lg:hidden flex justify-center">
               <button
@@ -109,7 +113,7 @@ const Page = () => {
       </section>
 
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <div className="p-6 rounded-xl mt-3 flex flex-col text-center gap-4">
+        <div className=" rounded-xl flex flex-col text-center gap-4">
           {jobs.map((job, index) => (
             <div
               key={index}

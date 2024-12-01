@@ -24,12 +24,45 @@ export const navLinks = [
 
 export const projectsData = [
   {
+    name: "Gymero",
+    description:
+      "Huge full-stack application made for fitness enthusiasts. It has many functionalities like creating your own workout plan, diet plan, and more. It also has a social media part where you can share your progress with others.",
+    image: "./gymero.png",
+    stack: [
+      "React",
+      "Typescript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Sass",
+    ],
+    github: "https://github.com/Peterr181/engineering_thesis",
+    liveUrl: "https://gymero.live",
+  },
+  {
+    name: "SensusMind",
+    description:
+      "SensusMind is a website where you can take a test to check your mental health. It has a lot of functionalities like creating an account, taking a test, and more.",
+    image: "./sensus.png",
+    stack: ["React", "Next.js", "Typescript", "Zustand", "Tailwind"],
+    liveUrl: "https://sensusmind.com/pl",
+  },
+  {
+    name: "MindMap",
+    description:
+      "Application for psychotherapists with booking visits, blog about mental health and more.",
+    image: "./mindmap.png",
+    stack: ["Next.js", "Typescript", "Tailwind", "Next-intl", "Contentfull"],
+    liveUrl: "https://themindmap.eu/",
+  },
+  {
     name: "Meally e-commerce",
     description:
       "Typical e-commerce shop where user can buy food and search for food depend on category or food country. User can also inspect each food and read about it",
     image: "./meally.png",
     stack: ["Next.js", "Typescript", "SCSS", "Redux", "MongoDB"],
     github: "https://github.com/Peterr181/eatio-e-commerce-shop",
+    liveUrl: "https://eatio-e-commerce-shop.vercel.app",
   },
   {
     name: "StarBlog",
@@ -39,6 +72,7 @@ export const projectsData = [
     stack: ["React", "Typescript", "Tailwind", "PHP", "mySQL"],
     github: "https://github.com/Peterr181/StarBlog",
   },
+
   {
     name: "ailover",
     description:
@@ -54,6 +88,7 @@ export const projectsData = [
     image: "./countries.jpg",
     stack: ["React", "Axios", "Bem"],
     github: "https://github.com/Peterr181/REST-countries-",
+    liveUrl: "https://countries-peterr.netlify.app/",
   },
   {
     name: "SchoolManagment",
@@ -63,21 +98,7 @@ export const projectsData = [
     stack: ["React", "Electron", "Typescript", "Sass", "SQL"],
     github: "https://github.com/Peterr181/School-managment-system",
   },
-  {
-    name: "Gymero",
-    description:
-      "This is a website for people that want to track their exercises progress, setting diets, chat with others and basically fitness social medias",
-    image: "./wip.png",
-    stack: [
-      "React",
-      "Typescript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Sass",
-    ],
-    github: "https://github.com/Peterr181/engineering_thesis",
-  },
+
   {
     name: "Reactinho",
     description:
@@ -85,6 +106,7 @@ export const projectsData = [
     image: "./reactinho.png",
     stack: ["React", "CSS", "Axios", "Context-API"],
     github: "https://github.com/Peterr181/REACTINHO",
+    liveUrl: "https://reactinhoo.netlify.app/",
   },
   {
     name: "Refao",

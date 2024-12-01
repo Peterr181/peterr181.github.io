@@ -6,11 +6,11 @@ import "../../app/globals.css";
 
 const Page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-9">
       <section className="mt-36 max-w-[80rem] text-center sm:mb-0 scroll-mt-[100rem]">
         <div className="flex items-center justify-center">
           <div className="relative">
-            <div className="image-container">
+            <div className="image-container sm:mt-0 mt-9">
               <Image
                 src={peterPhoto}
                 alt="Peter's programming photo"
@@ -26,7 +26,7 @@ const Page = () => {
           </div>
         </div>
 
-        <h1 className="mb-10 mt-4 px-4 lg:text-2xl text-xs font-medium !leading-[1.5] sm:text-2xl">
+        <h1 className="mb-10 mt-4 px-4 lg:text-2xl text-lg font-medium !leading-[1.5] sm:text-2xl">
           <span className="font-bold">Hello, I&apos;m Peter.</span> I&apos;m
           aspiring{" "}
           <span className="font-bold text-[#1d4ed8]">front-end developer</span>.
