@@ -58,7 +58,7 @@ const Page = () => {
       <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
         <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
           <div>
-            <h2 className=" lg:text-4xl text-md mb-10">
+            <h2 className=" lg:text-4xl text-xl mb-10">
               Technologies <span className="text-[#1d4ed8]">I know</span> very
               well and <span className="text-[#1d4ed8]">still learning</span>
             </h2>

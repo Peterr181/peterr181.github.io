@@ -22,7 +22,7 @@ const Modal: FC<ModalProps> = ({ isVisible, onClose, children }) => {
       }`}
       onClick={() => onClose()}
     >
-      <div className="w-[600px] relative">
+      <div className="w-[600px] relative flex items-center justify-center">
         <div
           className={`bg-[#1E1E1F] p-9 rounded-xl transition-transform transform ${
             isVisible ? "scale-100" : "scale-95"

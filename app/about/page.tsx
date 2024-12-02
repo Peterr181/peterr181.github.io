@@ -113,7 +113,7 @@ const Page = () => {
       </section>
 
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <div className=" rounded-xl flex flex-col text-center gap-4">
+        <div className="rounded-xl flex flex-col text-center gap-4">
           {jobs.map((job, index) => (
             <div
               key={index}

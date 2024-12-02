@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <section className="flex min-h-screen flex-col items-center justify-between p-6 sm:p-12 md:p-16 lg:p-24 text-white">
       <div className="mt-16 lg:mt-36 text-center sm:mb-0 m-auto max-w-[1200px]">
-        <h2 className="lg:text-4xl text-md mb-10 md:mt-0 mt-[100px]">
+        <h2 className="lg:text-4xl text-xl mb-10 md:mt-0 mt-[100px]">
           My <span className="text-[#1d4ed8]">projects</span> I was working with
         </h2>
 

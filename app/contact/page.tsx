@@ -3,9 +3,9 @@ import "../../app/globals.css";
 
 const Page = () => {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between p-24 text-white">
+    <section className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-9 text-white">
       <div className="mt-36 max-w-[100rem] text-center sm:mb-0 scroll-mt-[100rem] ">
-        <h2 className="lg:text-4xl md:text-2xl sm: text-xl mt-16 fade-in-text">
+        <h2 className="lg:text-4xl md:text-2xl sm:text-xl text-xl mt-16 fade-in-text">
           Choose <span className="text-[#1d4ed8]">your</span> way to{" "}
           <span className="text-[#1d4ed8]">contact me</span>
         </h2>
